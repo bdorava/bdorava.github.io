@@ -30,7 +30,7 @@ url: "bdorava.name" # the base hostname & protocol for your site, e.g. http://ex
 github_username:  bdorava
 
 # Build settings
-theme: minima
+#theme: minima
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-feed
