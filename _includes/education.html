@@ -1,0 +1,19 @@
+{% if site.data.education %}
+<div class="education mb-8 md:mb-16">
+    <h2 class="font-bold text-xl pb-3 mb-3 border-b" data-sal="slide-up" data-sal-duration="800">
+       My <span class="{{site.data.settings.text-color-scheme}}">Education</span>
+    </h2>
+    <div class="grid grid-cols-1 gap-4 mb-3 md:mb-5">
+        {% for item in site.data.education %}
+        <div class="block p-6 bg-white border border-gray-200 rounded-lg shadow">
+            <h5 class="font-bold mb-1">{{item.course}}</h5>
+            <p class="text-gray-700">{{item.college}}
+            <p>
+            <p class="font-normal text-gray-500">
+                <span>{{item.from}}</span> &mdash; <span>{{item.to}}</span>
+            <p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
